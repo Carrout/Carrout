@@ -51,24 +51,24 @@ double answer(double a, double b, double c, char m, char n)
 }
 void help()
 {
-	printf("°ïÖúĞÅÏ¢\n");
-	printf("ÄúĞèÒªÊäÈëÃüÁî´úºÅÀ´½øĞĞ²Ù×÷, ÇÒ\n");
-	printf("Ò»Äê¼¶ÌâÄ¿Îª²»³¬¹ıÊ®Î»µÄ¼Ó¼õ·¨;\n");
-	printf("¶şÄê¼¶ÌâÄ¿Îª²»³¬¹ı°ÙÎ»µÄ³Ë³ı·¨;\n");
-	printf("ÈıÄê¼¶ÌâÄ¿Îª²»³¬¹ı°ÙÎ»µÄ¼Ó¼õ³Ë³ı»ìºÏÌâÄ¿.\n");
+	printf("å¸®åŠ©ä¿¡æ¯\n");
+	printf("æ‚¨éœ€è¦è¾“å…¥å‘½ä»¤ä»£å·æ¥è¿›è¡Œæ“ä½œ, ä¸”\n");
+	printf("ä¸€å¹´çº§é¢˜ç›®ä¸ºä¸è¶…è¿‡åä½çš„åŠ å‡æ³•;\n");
+	printf("äºŒå¹´çº§é¢˜ç›®ä¸ºä¸è¶…è¿‡ç™¾ä½çš„ä¹˜é™¤æ³•;\n");
+	printf("ä¸‰å¹´çº§é¢˜ç›®ä¸ºä¸è¶…è¿‡ç™¾ä½çš„åŠ å‡ä¹˜é™¤æ··åˆé¢˜ç›®.\n");
 }
 void menu()
 {
-	printf("²Ù×÷ÁĞ±í£º\n");
-	printf("£¨1£©Ò»Äê¼¶\t£¨2£©¶şÄê¼¶\t£¨3£©ÈıÄê¼¶\n");
-	printf("£¨4£©°ïÖú\t£¨5£©ÍË³ö³ÌĞò\t£¨6£©ÇåÆÁ\n");
+	printf("æ“ä½œåˆ—è¡¨ï¼š\n");
+	printf("ï¼ˆ1ï¼‰ä¸€å¹´çº§\tï¼ˆ2ï¼‰äºŒå¹´çº§\tï¼ˆ3ï¼‰ä¸‰å¹´çº§\n");
+	printf("ï¼ˆ4ï¼‰å¸®åŠ©\tï¼ˆ5ï¼‰é€€å‡ºç¨‹åº\tï¼ˆ6ï¼‰æ¸…å±\n");
 }
 void first_grade()
 {
 	int num1, num2, num3 = 0, algorithm, i;
 	char symbol, symbol2 = '+';
 	double answer1;
-	printf("Ò»Äê¼¶¼ÆËãÌâÄ¿Éú³É£¡£¡\nÇëÊäÈëÉú³É¸öÊı");
+	printf("ä¸€å¹´çº§è®¡ç®—é¢˜ç›®ç”Ÿæˆï¼ï¼\nè¯·è¾“å…¥ç”Ÿæˆä¸ªæ•°");
 	scanf("%d", &i);
 	while (i)
 	{
@@ -89,7 +89,7 @@ void second_grade()
 	int num1, num2, num3 = 0, algorithm, i;
 	char symbol, symbol2 = '+';
 	double answer1;
-	printf("¶şÄê¼¶¼ÆËãÌâÄ¿Éú³É£¡£¡\nÇëÊäÈëÉú³É¸öÊı");
+	printf("äºŒå¹´çº§è®¡ç®—é¢˜ç›®ç”Ÿæˆï¼ï¼\nè¯·è¾“å…¥ç”Ÿæˆä¸ªæ•°");
 	scanf("%d", &i);
 	while (i)
 	{
@@ -113,7 +113,7 @@ void third_grade()
 	int num1, num2, num3, algorithm1, algorithm2, i;
 	char symbol, symbol2;
 	double answer1;
-	printf("ÈıÄê¼¶¼ÆËãÌâÄ¿Éú³É£¡£¡\nÇëÊäÈëÉú³É¸öÊı");
+	printf("ä¸‰å¹´çº§è®¡ç®—é¢˜ç›®ç”Ÿæˆï¼ï¼\nè¯·è¾“å…¥ç”Ÿæˆä¸ªæ•°");
 	scanf("%d", &i);
 	while (i)
 	{
@@ -153,13 +153,13 @@ void third_grade()
 int main()
 {
 	int choice, num_operate;
-	printf("»¶Ó­Ê¹ÓÃ¿ÚËãÉú³ÉÆ÷ £º\n\n\n");
+	printf("æ¬¢è¿ä½¿ç”¨å£ç®—ç”Ÿæˆå™¨ ï¼š\n\n\n");
 	help();
-	printf("£¨°´»Ø³µ¼ÌĞø£©\n\n");
+	printf("ï¼ˆæŒ‰å›è½¦ç»§ç»­ï¼‰\n\n");
 	getchar();
 lp:system("cls");
 	menu();
-	printf("ÇëÊäÈëÄãµÄÑ¡Ôñ £º____");
+	printf("è¯·è¾“å…¥ä½ çš„é€‰æ‹© ï¼š____");
 	srand((unsigned)time(NULL));
 	while (1)
 	{
@@ -170,10 +170,11 @@ lp:system("cls");
 		case 2:second_grade();break;
 		case 3:third_grade();break;
 		case 4:help();break;
-		case 5:printf("³ÌĞò½áÊø, »¶Ó­ÏÂ´ÎÊ¹ÓÃ");return 0;
+		case 5:printf("ç¨‹åºç»“æŸ, æ¬¢è¿ä¸‹æ¬¡ä½¿ç”¨");return 0;
 		case 6:goto lp;break;
-		default:printf("Error!!!\n´íÎóÖ¸ÁîÇëÖØĞÂÊäÈë");break;
+		default:printf("Error!!!\né”™è¯¯æŒ‡ä»¤è¯·é‡æ–°è¾“å…¥");break;
 		}
-		printf("Éú³ÉÍê±Ï£¬Çë¼ÌĞøÊäÈëÄãµÄÑ¡Ôñ £º____\n\n\n");
+		printf("ç”Ÿæˆå®Œæ¯•ï¼Œè¯·ç»§ç»­è¾“å…¥ä½ çš„é€‰æ‹© ï¼š____\n\n\n");
 	}
+	return 0;
 }
